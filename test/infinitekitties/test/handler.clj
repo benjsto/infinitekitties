@@ -14,9 +14,10 @@
     (let [response (app (request :get "/j"))]
       (is (= 200 (:status response)))))
 
-  (testing "json route"
+  (testing "cat route"
     (let [response (app (request :get "/cat"))]
-      (is (= 200 (:status response)))))
+      (is (= 200 (:status response)))
+      (is (= "image/jpeg" (get (:headers response) "Content-Type")))))
 
   (testing "404"
     (let [response (app (request :get "/nothing"))]
