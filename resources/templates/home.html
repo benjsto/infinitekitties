@@ -1,14 +1,8 @@
 {% extends "base.html" %}
-{% block content %}
-  <div class="jumbotron">
-    <h1>Welcome to infinitekitties</h1>
-    <p>Time to start building your site!</p>
-    <p><a class="btn btn-primary btn-lg" href="http://luminusweb.net">Learn more &raquo;</a></p>
-  </div>
-
+{% block cat %}
   <div class="row-fluid">
     <div class="span10">
-    {{content|safe}}
+        <a href="/"><img src="{{cat|safe}}" /></a>
     </div>
   </div>
 {% endblock %}
