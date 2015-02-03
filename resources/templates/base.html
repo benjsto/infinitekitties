@@ -13,17 +13,13 @@
         <div class="navbar-header">
           <a class="navbar-brand" href="{{servlet-context}}/"> ∞ kitties ∞ </a>
         </div>
-        <div class="navbar-collapse collapse ">
-          <ul class="nav navbar-nav">
-            <!--li class="{{home-selected}}"><a href="{{servlet-context}}/">Home</a></li-->
-            <!--li class="{{about-selected}}"><a href="{{servlet-context}}/about">Test</a></li-->
-          </ul>
-        </div>
       </div>
     </div>
 
     <div class="container">
       {% block cat %}
+      {% endblock %}
+      {% block photo-info %}
       {% endblock %}
     </div>
     <!-- scripts and styles -->
