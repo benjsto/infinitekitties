@@ -1,7 +1,6 @@
 (ns infinitekitties.routes.home
   (:require [compojure.core :refer :all]
             [infinitekitties.layout :as layout]
-            [infinitekitties.util :as util]
             [ring.util.response :refer :all]
             [clj-http.client :as client]))
 
@@ -43,5 +42,4 @@
 
 (defroutes home-routes
   (GET "/" [] (home-page))
-  ;(GET "/cat" [] (content-type (url-response (java.net.URL. (get-random-medium-cat-photo-url))) "image/jpeg" ))
   (GET "/j" [] {:status 200 :headers {"Content-Type" "application/json"} :body "{ 'test' : 'json' }"}))

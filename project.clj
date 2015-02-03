@@ -6,13 +6,7 @@
                  [ring-server "0.3.1"]
                  [ring/ring-core "1.3.2"]
                  [selmer "0.7.7"]
-                 ;[com.taoensso/timbre "3.3.1"]
-                 ;[com.taoensso/tower "3.0.2"]
-                 [markdown-clj "0.9.58" :exclusions [com.keminglabs/cljx]]
                  [environ "1.0.0"]
-                 ;[im.chit/cronj "1.4.3"]
-                 [noir-exception "0.2.3"]
-                 ;[prone "0.8.0"]
                  [clj-http "1.0.1"]]
   :uberjar-name "infinitekitties.jar"
   :repl-options {:init-ns infinitekitties.repl}
